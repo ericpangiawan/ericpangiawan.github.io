@@ -1,0 +1,346 @@
+html{scroll-behavior: smooth;}
+/* Navbar */
+.navbar{
+    /* position: relative;
+    z-index: 2; */
+    background: white;
+}
+
+
+.navbar-brand{
+    font-family: LeagueSpartan;
+    font-size: 28px;
+}
+
+.jumbotron{
+    background-image: url(../assets/background-degrade.png);
+    background-size: cover;
+    height: auto;
+    /* position: relative; */
+}
+
+.introduction{
+    /* z-index: 1; */
+    margin-top: 50px;
+}
+
+/* .jumbotron::after{
+    content:'';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+} */
+
+.jumbotron .display-4{
+    color: white;
+    font-family: LeagueSpartan;
+    font-size: 28px;
+}
+
+.line-university{
+    width: 100%;
+    border-top: 5px solid white;       
+}
+
+.university-wrapper{
+    margin-top: 300px;
+}
+
+/* About Display */
+#about{
+    background-color: #C1EEFF;
+    padding: 50px;
+    margin-top: -35px;
+}
+
+#about .display-4{
+    font-size: 28px;
+    font-family: LeagueSpartan;
+    margin: 30px 0;
+    color: black;
+}
+
+#about img{
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+}
+
+#about .about-me{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+/* Akhir About */
+
+/* Skills */
+#skill{
+    background-color: #D4F3FF;
+    width: 100%;
+    padding: 50px;
+}
+
+#skill .display-4{
+    font-family: LeagueSpartan;
+    font-size: 28px;
+    text-align: center;
+    color: black;
+}
+
+#skill .hr-black{
+    width: 100px;
+    border-bottom: 5px solid black;
+}
+
+#skill .skill-wrapper{
+    display: block;
+}
+
+#skill .item-skill{
+    width: 300px;
+    height: 200px;
+    border: 5px solid #000;
+    border-radius: 10%;
+    display: flex;
+    margin: 30px auto;
+}
+
+#skill .item-skill img{
+    width: 130px;
+    height: auto;
+    margin: auto;
+    align-items: center;
+    
+}
+/* Akhir Skills */
+/* Projects */
+#project{
+    background-color: #E7F8FF;
+    width: 100%;
+    padding: 50px;
+}
+
+#project .bottom-content{
+    display: block;
+}
+
+#project .display-4{
+    font-family: LeagueSpartan;
+    font-size: 28px;
+    text-align: center;
+    color: black;
+}
+
+#project .hr-black{
+    width: 150px;
+    border-bottom: 5px solid black;
+}
+
+#project .text-project-wrapper{
+    text-align: center;
+}
+
+#project .project-type{
+    color: #7D7D7D;
+    font-family: Calibri;
+}
+
+#project .project-content{
+    font-family: Calibri;
+    color: black;
+}
+
+#project .project-name{
+    font-family: LeagueSpartan;
+    font-size: 24px;
+    color: black;
+    width: fit-content;
+    border-bottom: 4px solid black;
+    padding: 5px 0;
+    margin: 30px auto;
+}
+
+#project .project-wrapper{
+    padding: 30px 0;
+}
+
+/*Akhir Projects*/
+
+/* Contact */
+#contact{
+    background-image: url(../assets/contact-bg.png);
+    background-size: cover;
+    height: 560px;
+    padding: 50px;
+}
+#contact .display-4{
+    font-size: 24px;
+    font-family: LeagueSpartan;
+    color: black;
+    border-bottom: 5px solid black;
+    width: 50%;
+}
+
+#contact .container .contact-wrapper{
+    margin-top: 170px;
+}
+
+#contact .contact-wrapper .logo-content{
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+}
+#contact .contact-wrapper .logo-content img{
+    width: 50px;
+    height: 50px;
+}
+#contact .contact-wrapper .logo-content .contact-text{
+    font-family: Calibri;
+    font-size: 20px;
+    margin: auto 30px;
+}
+/* Akhir Contact */
+
+/* footer */
+footer{
+    width: 100%;
+    padding: 20px;
+}
+footer p{
+    font-family: Calibri;
+    margin: auto;
+    text-align: center;
+}
+/* Akhir footer */
+@font-face{
+    font-family: LeagueSpartan;
+    src: url(../assets/LeagueSpartan-Bold.otf);
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+    .navbar{
+        background: transparent;
+        transition: ease 500ms;
+    }
+    .nav-link{        
+        transition: 500ms ease;
+        text-decoration: none;
+        font-family: LeagueSpartan;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-right: 20px;
+    }
+
+    .nav-color{
+        color: white;
+    }
+
+    .nav-link::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #FFFFFF;
+        width: 0;
+        margin: auto;
+        margin-top: -3px;
+        transition: all 250ms ease;
+    }
+    .nav-link:hover::after{
+
+        width: 50px;
+    }
+    
+    .jumbotron{
+        margin-top: -75px;
+        height: 640px;
+    }
+    
+    .introduction{
+        margin-top: 160px;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    .university-wrapper{
+        margin-top: 240px;
+    }
+
+    
+    /* About */
+    #about .about-me{
+        display: flex;
+        align-items: center;
+    }
+    
+    #about .about-me .about-wrapper{
+        margin-left: auto;
+        width: 50%;
+    }
+
+    #about .about-me .display-4{
+        text-align: left;
+        margin: 0 0 10px;
+    }
+    #about .about-wrapper .about-content{
+        width: 100%;
+        font-family: Calibri;
+        font-size: 16px;
+        text-align: left;
+    }
+    /* Akhir About */
+
+    /* Skills */
+    
+    #skill .top-row-wrapper, .bottom-row-wrapper{
+        display: flex;
+        padding: 20px 0;
+    }
+
+    #skill .item-skill{
+        width:  250px;
+        height: 250px;
+        padding: 30px;
+        margin: 0 75px;
+        border: 5px solid #000;
+        border-radius: 25%;
+        display: flex;
+    }
+    #skill .item-skill img{
+        width: 160px;
+    }
+    /* Akhir Skills */
+
+    /* Projects */
+    #project .project-name{
+        margin: 0;
+    }
+    #project .project-wrapper{
+        display: flex;
+        align-items: center;
+    }
+
+    #project .project-wrapper img{
+        width: 400px;
+    }
+    #project .text-project-wrapper{
+        text-align: left;
+        margin: auto;
+        width: 50%;
+    }
+    /* Akhir Projects */
+    /* Contact */
+    #contact .container .contact-wrapper{
+        display: block;
+        margin-top: 240px;
+    }
+    #contact{
+        height: 700px;
+    }
+
+    #contact .display-4{
+        width: 20%;
+    }
+    /* Akhir Contact */
+}
