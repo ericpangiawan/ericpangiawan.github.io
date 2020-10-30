@@ -106,8 +106,8 @@ html{scroll-behavior: smooth;}
 }
 
 #skill .item-skill{
-    width: 250px;
-    height: 150px;
+    width: 50vw;
+    height: 25vh;
     border: 5px solid #000;
     border-radius: 10%;
     display: flex;
@@ -147,6 +147,18 @@ html{scroll-behavior: smooth;}
 
 #project .text-project-wrapper{
     text-align: center;
+}
+
+#project .project-wrapper{
+    width: 100%;
+}
+#project .project-wrapper .img-wrapper{
+    display: flex;
+}
+#project .project-wrapper img{
+    width: 50vw;
+    height: auto;
+    margin: 0 auto;
 }
 
 #project .project-type{
